@@ -38,7 +38,7 @@ while true; do
         oci compute instance launch --no-retry \
         --auth api_key \
         --profile "$PROFILE" \
-        --display-name $DISPLAY_NAME \
+        --display-name "$DISPLAY_NAME" \
         --compartment-id "$TENANCY_ID" \
         --image-id "$IMAGE_ID" \
         --subnet-id "$SUBNET_ID" \
